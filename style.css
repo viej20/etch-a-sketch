@@ -1,4 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 #container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    border: solid 2px blue;
+    flex-direction: column;
+}
+
+#grid{
+    width: 600px;
+    height: 600px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -6,7 +23,6 @@
 }
 
 div{
-    height: 50px;
-    width: 50px;
-    border: black solid 2px;
+
+    border: black solid 1px;
 }

@@ -1,10 +1,12 @@
-const container = document.querySelector('#container');
+const container = document.querySelector('#grid');
+let squares = 16*16;
+let grid = 600;
 
+for(let i=0; i < squares; i++){
 
-for(let i=0; i < 256; i++){
     const div = document.createElement('div');
-    div.innerText = i;
+    div.style.cssText = `width: ${(grid/(Math.sqrt(squares))) -2}px; height: ${(grid/(Math.sqrt(squares))) -2}px`;
     container.appendChild(div);
-
-    
 }
+
+
