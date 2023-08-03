@@ -21,11 +21,12 @@ function gridSize(squares = 16*16){
 //creates sketch when hovering
     const allCells = document.getElementsByClassName("cell");
     let allCellsArray = Array.from(allCells);
+    let color = 'black';
 
     allCellsArray.forEach( (div) => {
 
         div.addEventListener('mouseover', () =>{
-            div.style.setProperty('background-color', 'black'); //a better way to set css properties, sets specific css property
+            div.style.setProperty('background-color', color); //a better way to set css properties, sets specific css property
         })
     });
 
